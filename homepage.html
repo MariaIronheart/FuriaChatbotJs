@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FURIA GG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./homepage.css" rel="stylesheet">
+</head>
+<body class="bg-white text-white font-sans min-h-screen flex flex-col">
+    <header class="flex items-center justify-center bg-black mb-10"> 
+        <img src="img/logo-furia-branco.png" alt="Logo oficial FURIA" class="w-80 h-40 object-contain"/>
+    </header>
+    <main class="flex-grow container mx-auto px-4 py-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex flex-col items-start py-6">
+            <div class="w-full max-w-md mb-4 rounded-lg">
+                <div class="flex flex-col items-start py-6 space-y-4 w-full max-w-md">
+                    <h2 class="text-2xl font-bold text-black mb-4">Bem vindo, furioso(a)! </br> Veja o que você pode descobrir com o FuriaBot CS:</h2>
+                    <div class="bg-black p-4 rounded-lg w-full ">📅 <strong>Próximos jogos:</strong> veja a agenda de partidas da FURIA.</div>
+                    <div class="bg-black p-4 rounded-lg w-full ">🧑‍🤝‍🧑 <strong>Line-up:</strong> conheça os jogadores atuais da equipe.</div>
+                    <div class="bg-black p-4 rounded-lg w-full ">🏆 <strong>Últimos resultados:</strong> confira os resultados recentes dos jogos.</div>
+                    <div class="bg-black p-4 rounded-lg w-full ">📰 <strong>Notícias:</strong> fique por dentro das novidades da FURIA.</div>
+                    <div class="bg-black p-4 rounded-lg w-full ">❓ <strong>Comandos disponíveis:</strong> descubra tudo o que o FuriaBot pode responder.</div>
+                </div>
+            </div>  
+        </div>
+        <div class="rounded-lg shadow-lg flex flex-col h-[800px] bg-neutral-900 border border-neutral-700">
+          <div class="bg-neutral-800 p-3 rounded-t-lg flex items-center">
+            <div class="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>
+            <span class="font-medium text-white">FuriaBot</span>
+          </div>
+          <div id="chat-messages" class="flex-1 p-4 overflow-y-auto text-sm"></div>
+          <div class="flex p-3 border-t border-neutral-700 bg-neutral-800">
+            <input id="user-input" type="text" placeholder="Digite algo..." class="flex-1 p-2 rounded-l-md bg-neutral-700 text-white border border-neutral-600 focus:outline-none"/>
+            <button id="send-button" class="bg-purple-600 hover:bg-purple-700 px-4 rounded-r-md text-white">➤</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center text-xs text-gray-500 py-4">© 2025 All rights reserved</footer>
+    <script src="chat.js"></script>
+</body>
+</html>
