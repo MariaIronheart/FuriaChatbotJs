@@ -1,11 +1,11 @@
-<h1>FuriaBot</h1>
-Descrição </br>
+<h1>FuriaBot</h1></br>
+<h2>Descrição</h2> </br>
 FuriaBot é um chatbot pensado para os fãs do time de CS:GO FURIA. O bot foi desenvolvido com o objetivo de fornecer informações sobre o time, incluindo próximos jogos, resultados, line-up, notícias e muito mais. </br>
-
-Funcionalidades</br>
+</br>
+<h2>Funcionalidades</h2></br>
 
 Boas-vindas: Ao iniciar a conversa, o bot apresenta uma mensagem de boas-vindas e oferece opções de comandos.</br>
-
+</br>
 Comandos disponíveis:</br>
 Próximos Jogos: Exibe os próximos jogos do time FURIA.</br>
 Line-up Atual: Mostra a lista dos jogadores atuais da FURIA.</br>
