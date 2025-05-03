@@ -13,14 +13,14 @@ Line-up Atual: Mostra a lista dos jogadores atuais da FURIA.</br>
 Notícias: Exibe as últimas notícias sobre a FURIA.</br>
 Respostas Dinâmicas: O bot também responde a perguntas relacionadas a títulos, MVPs, ranking, entre outras.</br>
 Comandos Personalizados: Você pode interagir com o bot dizendo "oi", "olá", "menu", ou outros comandos específicos.
-</br>
-Tecnologias Utilizadas</br>
+</br></br>
+<h2>Tecnologias Utilizadas</h2></br>
 HTML: Estrutura da página web.</br>
 CSS (Tailwind): Estilo visual da interface.</br>
 JavaScript: Lógica e interação com o usuário.</br>
 GitHub: Repositório de código e controle de versão.</br>
 </br></br>
-Como Usar</br>
+<h2>Como Usar</h2></br>
 Clone o repositório:
 </br>
 bash</br>
@@ -31,7 +31,7 @@ Abra o arquivo index.html em um navegador.</br>
 </br></br>
 Comece a interagir com o chatbot. Você pode digitar comandos ou perguntas na caixa de entrada e clicar em "Enviar".</br>
 </br></br>
-*Estrutura do Projeto*</br>
+<h2>Estrutura do Projeto</h2></br>
 bash</br>
 Copiar</br>
 Editar</br>
