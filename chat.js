@@ -6,9 +6,9 @@ function displayMessage(message, isUser = false) {
     messageDiv.classList.add('p-4', 'rounded-lg', 'text-white', 'mb-2');
     
     if (isUser) {
-      messageDiv.classList.add('bg-purple-600'); // Estilo para a mensagem do usuário
+      messageDiv.classList.add('bg-purple-600', 'text-xl'); // Estilo para a mensagem do usuário
     } else {
-      messageDiv.classList.add('bg-black'); // Estilo para a resposta do bot
+      messageDiv.classList.add('bg-black', 'text-xl'); // Estilo para a resposta do bot
     }
     
     messageDiv.innerText = message;
