@@ -13,10 +13,10 @@ function displayMessage(message, isUser = false) {
     
     messageDiv.innerText = message;
     chatMessages.appendChild(messageDiv);
-    chatMessages.scrollTop = chatMessages.scrollHeight; // Rola para o final
+    chatMessages.scrollTop = chatMessages.scrollHeight; 
 }
 
-// Função para normalizar o texto (remover acentos e pontuação)
+// Função para normalizar o texto 
 function normalize(text) {
   return text
     .toLowerCase()
@@ -30,7 +30,7 @@ function normalize(text) {
 function handleUserInput() {
     const userInput = document.getElementById('user-input').value.trim();
     if (userInput) {
-      displayMessage(userInput, true); // Exibe a mensagem do usuário
+      displayMessage(userInput, true); // Exibe a mensagem do user
       document.getElementById('user-input').value = ''; // Limpa o campo de entrada
       
       // Gerar a resposta do bot
@@ -64,7 +64,7 @@ const furiaData = {
     ]
 };
 
-// Mensagem padrão para exibir no final de cada resposta
+// Mensagem padrão para exibir no final 
 const tip = '\n\n📌 Digite "menu" para voltar às opções.';
 
 // Função para gerar a resposta do bot
@@ -88,7 +88,8 @@ function getBotResponse(userInput) {
       '- Onde posso assistir os jogos?\n' +
       '- Onde comprar produtos da FURIA?\n\n' +
       '📌 Dica: você pode digitar "menu" a qualquer momento para voltar aqui.';
-  
+      
+    // Perguntas
     } else if (/(\bpróximos jogos\b)|(\b1\b)/.test(userMessage)) {
       botResponse = '📅 Próximos jogos da FURIA:\n- ' + furiaData.proximosJogos.join('\n- ') + tip;
   
@@ -156,15 +157,15 @@ function getBotResponse(userInput) {
     displayMessage(botResponse);
 }
 
-// Mensagem de boas-vindas assim que a página carregar
+// Mensagem de boas-vindas
 window.addEventListener('load', () => {
   displayMessage('👋 Olá, furioso(a)! Eu sou o FuriaBot. Digite "menu" para começar.');
 });
 
-// Evento de clique no botão de enviar
+// Evento botão de enviar
 document.getElementById('send-button').addEventListener('click', handleUserInput);
 
-// Evento de pressionamento de tecla para enviar a mensagem ao pressionar Enter
+
 document.getElementById('user-input').addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     handleUserInput();
